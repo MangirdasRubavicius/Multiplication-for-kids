@@ -1,6 +1,8 @@
 from random import randint
 t=0
 n=0
+number=0
+questions=[]
 if __name__ == "__main__":
     for i in range(10):
         number_1 = randint(1,10)
@@ -11,10 +13,14 @@ if __name__ == "__main__":
         answer=input("What is the answer? : " )
         answer = float(answer)
         if answer == number_3:
-            print("Correct.")
             t=t+1
+            number=number+1
         else:
-            print("Incorrect.")
             n=n+1
-    print("You answered: ", t ," correctly, and", n, " incorrectly")
+if t >= 7:
+    passing = "passed"
+    
+else:
+    passing = "failed"
+    print("You answered: ", t ," correctly, and", n, " incorrectly, you ", passing , " the test.")
 
