@@ -1,8 +1,6 @@
 from random import randint
 t=0
 n=0
-number=0
-questions=[]
 if __name__ == "__main__":
     for i in range(10):
         number_1 = randint(1,10)
